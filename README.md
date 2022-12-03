@@ -1,5 +1,7 @@
 # Visual-Inertial Odometry for DJI Tello Minidrone
-[![Python3](https://img.shields.io/badge/Python-3-blue.svg)](https://www.python.org/)               
+[![Python3](https://img.shields.io/badge/Python-3-blue.svg)](https://www.python.org/)
+[![Tensorflow](https://img.shields.io/badge/Python3-Tensorflow-green.svg)](https://www.tensorflow.org/)
+[![MATLAB](https://img.shields.io/badge/MATLAB-SIMULINK-blue.svg)](https://www.mathworks.com/help/simulink/)
 
 ### Project Motivation
 Using an airborne vehicle to explore an inside environment is a burgeoning topic, whether for equipment maintenance or greenhouse monitoring. Indoor aerial vehicles may play a key role in situations when human access is impossible. However, driving an aerial vehicle in an interior environment is difficult, particularly because the GPS sensor cannot provide positional information. This is where odometry might be useful; it aids in estimating the change in location by analyzing the change in sensor readings. Using sensor data such as an Inertial Measurement Unit (IMU), camera, etc., the approach estimates the change in position as the vehicle travels through space.
@@ -9,6 +11,8 @@ Using an airborne vehicle to explore an inside environment is a burgeoning topic
 Design a visual-inertial odometry system for a tiny aerial vehicle using MATLAB and Simulink. 
 Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction with the 6-axis IMU data to construct the method that will enhance state estimates and replace the presently employed optical flow modeling approach.
 
+### Simulation
+Used MATLAB Simulink Educational along with Python-Tensorflow to create scenario and train the RCNN model.
 
 ### Libraries
 The following Libraries have been used.
