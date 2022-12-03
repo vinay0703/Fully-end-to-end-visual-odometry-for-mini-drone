@@ -34,7 +34,7 @@ six==1.16.0
 Below is an example of how you can instruct your audience on installing and setting up.
 ```
 1. Fork the repository and pull it into your local machine.
-2. Instal all the required packages by simply typing 
+2. Install all the required packages by simply typing 
         "pip3 install -r requirements.txt"
    in the terminal opened inside visual_odometry/ folder.
 ```
