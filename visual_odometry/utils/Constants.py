@@ -70,7 +70,7 @@ class Constants(object):
         Constants.POLYGON_PATH_SIDES = 3
         Constants.ZIG_ZAG_PATH_STEPS = 2
         Constants.PATH_ANGLE = 60
-        Constants.FLYING_HEIGHT = 60
+        Constants.FLYING_HEIGHT = 50
 
         # Constants for capturing location and images
         Constants.CAPUTRE_INTERVAL_SEC = 0.005

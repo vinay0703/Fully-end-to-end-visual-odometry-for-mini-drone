@@ -34,7 +34,10 @@ class Location:
         n = self.location_data.number_of_locations
 
         self.location_data.location = self.numpy.array(vel) * (T/n) + self.numpy.array(acc) * (1/2 * T/n * T/n)
-        self.location_data.location = self.numpy.add.accumulate(self.location_data.location)
+        # -1 since the drone axes are aligned to -ve by default at first.
+        self.location_data.location = self.numpy.add.accumulate(self.location_data.location*-1)
+        # Height is considered as constant here bcz we considered constant in our training model.
+        self.location_data.location[:,2] = self.constants.FLYING_HEIGHT
 
     def add_location_acceleration_velocity_to_matrix(self):
         # Velocity data

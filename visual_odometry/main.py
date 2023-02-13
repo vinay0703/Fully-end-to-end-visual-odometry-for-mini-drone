@@ -1,10 +1,11 @@
 from visual_odometry.di import Dependency
 class Drone(object):
     def __init__(self):
-        self.dependecy = Dependency.Dependency()
-        self.constants = self.dependecy.constants
-        self.control = self.dependecy.control
-        self.location = self.dependecy.location
+        self.dependency = Dependency.Dependency()
+        self.constants = self.dependency.constants
+        self.control = self.dependency.control
+        self.location = self.dependency.location
+        self.plot = self.dependency.plot
 
     def fly_drone(self):
         battery_percentage = self.control.get_battery_percentage()
@@ -31,6 +32,12 @@ class Drone(object):
             # Saving location data
             self.location.calculate_location_matrix()
             self.location.save_location_to_file()
+
+            # Plotting live drone path in 3d.
+            # self.plot.live_plot_path(self.constants.FOLDER_FOR_SAVING_FILE + self.constants.LOCATION_DATA_FILE_NAME, self.constants.FOLDER_FOR_SAVING_FILE + self.constants.LOCATION_DATA_FILE_NAME)
+
+            # Plotting drone path in 3d.
+            self.plot.plot_path(self.constants.FOLDER_FOR_SAVING_FILE + self.constants.LOCATION_DATA_FILE_NAME)
 
         print(self.constants.LAND_MESSAGE)
 
