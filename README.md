@@ -11,32 +11,45 @@ Using an airborne vehicle to explore an inside environment is a burgeoning topic
 Design a visual-inertial odometry system for a tiny aerial vehicle using MATLAB and Simulink. 
 Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction with the 6-axis IMU data to construct the method that will enhance state estimates and replace the presently employed optical flow modeling approach.
 
-### Simulation
-Used MATLAB Simulink Educational along with Python-Tensorflow to create scenario and train the RCNN model.
-
 ### Libraries
 The following Libraries have been used.
 ```
 djitellopy==2.4.0
 et-xmlfile==1.1.0
 numpy==1.23.4
-opencv-contrib-python==4.6.0.66
+matplotlib==3.6.3
+numpy==1.23.4
 opencv-python==4.6.0.66
 openpyxl==3.0.10
 pandas==1.5.1
 pygame==2.1.2
-python-dateutil==2.8.2
-pytz==2022.6
-six==1.16.0
+tensorflow==2.12.0
+scipy==1.10.1
 ```
 
 ### Installation
-Below is an example of how you can instruct your audience on installing and setting up.
+
 ```
 1. Fork the repository and pull it into your local machine.
+
 2. Install all the required packages by simply typing 
-        "pip3 install -r requirements.txt"
+        "python3 setup.py install"
    in the terminal opened inside the root folder.
+
+3. Setup the tensorflow-gpu in order to  make the prediction faster by typing the following commands
+        conda install -c conda-forge cudatoolkit=11.8.0
+        python3 -m pip install nvidia-cudnn-cu11==8.6.0.163 tensorflow==2.12.*
+        mkdir -p $CONDA_PREFIX/etc/conda/activate.d
+        echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+        echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CUDNN_PATH/lib' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+        source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+        # Verify install:
+        python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+   in the terminal opened inside the root folder.
+
+4. Run main.py file from root folder by simply typing
+        "python3 visual_odometry/main.py"
+   in the terminal openend inside the root folder.
 ```
 
 

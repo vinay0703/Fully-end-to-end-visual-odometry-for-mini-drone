@@ -4,9 +4,6 @@ class Control:
         # Drone classes
         self.tello = tello
         self.tello.connect()
-        self.tello.streamon()
-        self.frame_read = self.tello.get_frame_read()
-
         # Utilities
         self.constants = constants
         self.location = location
@@ -16,24 +13,51 @@ class Control:
         self.time = time
         self.pygame = pygame
     
+    # Returns the battery life.
     def get_battery_percentage(self):
         return self.tello.get_battery()
 
+    # Starts the drone flight
     def start_control(self, control_choice):
         if control_choice == 1 or control_choice == 2:
             self.tello.takeoff()
+            self.tello.streamon()
+            self.frame_read = self.tello.get_frame_read()
             self.tello.move_up(self.constants.FLYING_HEIGHT)
+            # Starts the recorder thread.
             self.capture.start_recording_video(self.frame_read)
+            
+            # Starts the drone flight time recording thread.
             self.location.add_flight_start_time_data()
+            
+            # Starts the acceleration/velocity thread.
             self.location.start_adding_acceleration_velocity()
+            
             if control_choice == 1: self.polygon_path()
             elif control_choice == 2: self.zig_zag_path()
+            
+            # Stops the recorder thread.
             self.capture.stop_recording_video()
+            
+            # Stops the drone flight time recording thread.
             self.location.add_flight_stop_time_data()
+            
+            # Stops the acceleration/velocity thread.
             self.location.stop_adding_acceleration_velocity()
+            
             self.tello.land()
         elif control_choice == 3: self.manual_control()
 
+    # Ends all the drone connection.
+    # Done to avoid error which occurs when model.predict takes long time.
+    def stop_control(self):
+        self.tello.streamoff()
+        print(self.constants.SEPERATE_LINE_MESSAGE)
+        print("\tEnding drone connection")
+        print(self.constants.SEPERATE_LINE_MESSAGE)
+        self.tello = self.tello.end()
+    
+    # Predefined polygon path whoose edge length and number of sides can be controlled in Consants.py
     def polygon_path(self):
         n = self.constants.POLYGON_PATH_SIDES
         l = self.constants.POLYGON_PATH_EDGE_LENGTH
@@ -41,6 +65,7 @@ class Control:
             self.tello.move_forward(l)
             self.tello.rotate_clockwise(360//n)
     
+    # Manual control the drone using in-built keyboard
     def manual_control(self):
         def start():
             self.pygame.init()
@@ -100,15 +125,20 @@ class Control:
             
             if getKey("t"):
                 self.tello.takeoff()
+                self.tello.streamon()
+                self.frame_read = self.tello.get_frame_read()
                 # Start adding locations after takeoff
                 if(takeoff_flag == 0):
+                    # Starts the recorder thread.
                     self.capture.start_recording_video(self.frame_read)
+                    # Starts the drone flight time recording thread.
                     self.location.add_flight_start_time_data()
+                    # Starts the acceleration/velocity thread.
                     self.location.start_adding_acceleration_velocity()
                     takeoff_flag = 1
             elif getKey("l") or getKey("q"):
                 self.tello.land()
-                # Stop adding locations after landing
+                # Stop adding locations after landing and joins all the threads.
                 if(land_flag == 0):
                     self.capture.stop_recording_video()
                     self.location.add_flight_stop_time_data()
@@ -118,6 +148,7 @@ class Control:
 
         start() 
 
+    # Predefined Zig zag path with number of steps and path length adjustable in constants.py
     def zig_zag_path(self):
         steps = self.constants.ZIG_ZAG_PATH_STEPS
         l = self.constants.POLYGON_PATH_EDGE_LENGTH

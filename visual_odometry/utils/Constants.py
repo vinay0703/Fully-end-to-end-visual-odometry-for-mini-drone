@@ -1,5 +1,8 @@
 """This class contains all constants used in this project"""
 class Constants(object):
+    # Model constants
+    WEIGHTS_FILE_NAME = None
+    
     # File save constants
     FOLDER_FOR_SAVING_FILE = None
     LOCATION_DATA_FILE_NAME = None
@@ -34,15 +37,24 @@ class Constants(object):
     # Messages for displaying on screen
     CONTROL_MESSAGE = None
     CONTROL_CHOICE_MESSAGE = None
+    PLOT_CHOICE_MESSAGE = None
+    DRONE_FLIGHT_CHOICE = None
+    PREDICT_PATH_CHOICE = None
+    PLOT_PATH_CHOICE = None
     SEPERATE_LINE_MESSAGE = None
     CAPTURE_LOCATIONS_COMPLETE_MESSAGE = None
     CAPTURE_ACCELERATION_COMPLETE_MESSAGE = None
     CAPTURE_VELOCITY_COMPLETE_MESSAGE = None
     ABORT_TAKEOFF_MESSAGE = None
     LAND_MESSAGE = None
-
+    
     def __init__(self):
-        # File save constants
+        
+    	# Model constants
+        Constants.WEIGHTS_FILE_NAME = "Temporary_11"
+        Constants.PREDICTED_LOCATION_DATA_FILE_NAME = "predlocation.xlsx"
+        
+        # File saving constants
         Constants.FOLDER_FOR_SAVING_FILE = "visual_odometry/files/"
         Constants.LOCATION_DATA_FILE_NAME = "location.xlsx"
         Constants.ACCELERATION_DATA_FILE_NAME = "acceleration.xlsx"
@@ -66,18 +78,23 @@ class Constants(object):
 
         # Constants used in drone path
         Constants.MANUAL_CONTROL_SENSITIVITY = 60
-        Constants.POLYGON_PATH_EDGE_LENGTH = 60
+        Constants.POLYGON_PATH_EDGE_LENGTH = 30
         Constants.POLYGON_PATH_SIDES = 3
         Constants.ZIG_ZAG_PATH_STEPS = 2
         Constants.PATH_ANGLE = 60
-        Constants.FLYING_HEIGHT = 50
+        Constants.FLYING_HEIGHT = 30
 
         # Constants for capturing location and images
-        Constants.CAPUTRE_INTERVAL_SEC = 0.005
+        Constants.CAPUTRE_INTERVAL_SEC = 0.02
 
         # Messages for displaying on screen
         Constants.CONTROL_MESSAGE = "How do you like to control drone?"
+        Constants.PLOT_MESSAGE = "How do you like to plot the actual and predicted drone paths?"
         Constants.CONTROL_CHOICE_MESSAGE = "\n1)Predefined polygon path\n2)Predefined zig zag path\n3)Manual control drone\nEnter your choice: "
+        Constants.PLOT_CHOICE_MESSAGE = "\n1)Static plot (*faster)\n2)Live plot\nEnter your choice: "
+        Constants.DRONE_FLIGHT_CHOICE = "\nDo you want to fly the drone(yes|no)?: "
+        Constants.PREDICT_PATH_CHOICE = "\nDo you want to predict the drone path(yes|no)?: "
+        Constants.PLOT_PATH_CHOICE = "\nDo you want to plot the actual and predicted paths(yes|no)?: "
         Constants.SEPERATE_LINE_MESSAGE = "**************************************"
         Constants.CAPTURE_LOCATIONS_COMPLETE_MESSAGE = "Captured locations"
         Constants.CAPTURE_ACCELERATION_COMPLETE_MESSAGE = "Captured acceleration"

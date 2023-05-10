@@ -89,3 +89,4 @@ class Location:
     def stop_adding_acceleration_velocity(self):        
         self.stop_threads = True
         self.t1.join()
+        

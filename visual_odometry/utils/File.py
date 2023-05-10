@@ -5,6 +5,7 @@ class File:
         self.pandas = pandas
         self.constants = constants
 
+    # Saves matrix into excel file into respected location.
     def save_matrix_to_excel(self, matrix, file_name):
         matrix = self.numpy.array(matrix)
         
