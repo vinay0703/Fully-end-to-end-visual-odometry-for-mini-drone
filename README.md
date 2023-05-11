@@ -59,7 +59,7 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
 - Step 3 is optional, but recomended for faster prediction since it uses GPU.
 
 ## Documentation
-For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1-siPP2ZfyZjvaSePzHGXWjshNIiLmaMB/view?usp=share_link). 
+For more information about this project, read the [Thesis.pdf](https://github.com/vinay0703/fyp/files/11448898/Thesis.pdf)
 
 ## Implementation demo
 
