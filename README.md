@@ -1,5 +1,5 @@
 # Fully end-to-end visual odometry for minidrone
-[![Python3](https://img.shields.io/badge/python3-3670A0?logo=python&logoColor=ffdd54)](https://www.python.org/)
+[![Python3](https://img.shields.io/badge/Python3-3670A0?logo=python&logoColor=ffdd54)](https://www.python.org/)
 
 [![Tensorflow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?logo=TensorFlow&logoColor=white)](https://www.tensorflow.org/)
 
