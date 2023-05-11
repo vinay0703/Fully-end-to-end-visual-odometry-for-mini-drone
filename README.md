@@ -45,7 +45,7 @@ scipy==1.10.1
 
 ## Installation
 
-This entire project is developed in Ubuntu (Debian Linux) Operating System. Below installation steps are for Ubuntu OS. If you use another OS, then choose the alternative installation steps accordingly in "setup.py" file. 
+This entire project is developed in Ubuntu (Debian Linux) Operating System. Below installation steps are for Ubuntu OS. If you use another OS, then choose the alternative installation steps accordingly in "setup.py" file. (**cat requirements.txt | xargs -n 1 pip install**)
 
 1. Fork the repository and pull it into your local machine.
 
