@@ -62,10 +62,10 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
 For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1-siPP2ZfyZjvaSePzHGXWjshNIiLmaMB/view?usp=share_link). 
 
 ## Implementation demo
-This is for ConvNext model indoor prediction:
 
 
-https://github.com/vinay0703/fyp/assets/68630619/f8c944d9-db4f-4544-a3d9-11303303f70f
+https://github.com/vinay0703/fyp/assets/68630619/657fd4d5-a73d-4953-a2e3-41acf3e144c6
+
 
 
 ## Contributing
