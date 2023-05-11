@@ -77,8 +77,16 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
 For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1-siPP2ZfyZjvaSePzHGXWjshNIiLmaMB/view?usp=share_link). 
 
 ## Implementation demo
-https://github.com/vinay0703/fyp/assets/68630619/657fd4d5-a73d-4953-a2e3-41acf3e144c6
-https://github.com/vinay0703/fyp/assets/68630619/247a1cd7-00c2-47cd-a1f6-96019dfed68c
+
+
+
+https://github.com/vinay0703/fyp/assets/68630619/5204fffe-70fe-405b-94a7-a88329d51a3d
+
+
+
+
+https://github.com/vinay0703/fyp/assets/68630619/204ded87-453f-4397-9014-a449d39c8385
+
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
