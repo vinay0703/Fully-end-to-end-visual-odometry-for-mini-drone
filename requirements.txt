@@ -27,8 +27,6 @@ MarkupSafe==2.1.2
 matplotlib==3.6.3
 ml-dtypes==0.1.0
 numpy==1.23.4
-nvidia-cublas-cu11==11.11.3.6
-nvidia-cudnn-cu11==8.6.0.163
 oauthlib==3.2.2
 opencv-contrib-python==4.6.0.66
 opencv-python==4.6.0.66
