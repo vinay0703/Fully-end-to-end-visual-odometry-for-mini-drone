@@ -66,14 +66,17 @@ For more information about this project, read the [Thesis.pdf](https://drive.goo
 
 https://github.com/vinay0703/fyp/assets/68630619/657fd4d5-a73d-4953-a2e3-41acf3e144c6
 
- file:///home/vinay/Downloads/Simulation%20prediction.mp4
+
+
+
+https://github.com/vinay0703/fyp/assets/68630619/247a1cd7-00c2-47cd-a1f6-96019dfed68c
+
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star!
 Thanks again!
-
 
 ### Authors
 - [@vinay0703](https://github.com/vinay0703)
