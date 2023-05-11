@@ -5,13 +5,27 @@
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-SIMULINK-blue.svg)](https://www.mathworks.com/help/simulink/)
 
-## Project Motivation
+## Project motivation
 Using an airborne vehicle to explore an inside environment is a burgeoning topic, whether for equipment maintenance or greenhouse monitoring. Indoor aerial vehicles may play a key role in situations when human access is impossible. However, driving an aerial vehicle in an interior environment is difficult, particularly because the GPS sensor cannot provide positional information. This is where odometry might be useful; it aids in estimating the change in location by analyzing the change in sensor readings. Using sensor data such as an Inertial Measurement Unit (IMU), camera, etc., the approach estimates the change in position as the vehicle travels through space.
 
 
-## Project Description
+## Project description
 Design a visual-inertial odometry system for a tiny aerial vehicle using MATLAB and Simulink. 
 Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction with the 6-axis IMU data to construct the method that will enhance state estimates and replace the presently employed optical flow modeling approach.
+
+## Minidrone specifications
+We have used [DJI Ryze Tello](https://www.ryzerobotics.com/tello/specs) minidrone for this project.
+![tello](https://github.com/vinay0703/fyp/assets/68630619/e888dba7-be28-4a5e-94af-2f89c38f698e)
+**Specifications:**
+1. Weight: Approximately 80 g (Propellers and Battery Included)
+2. Dimensions: 98×92.5×41 mm
+3. Propeller: 3 inches
+4. Max Flight Distance: 100m
+5. Max Speed: 8m/s
+6. Max Flight Time: 13min
+7. Max Flight Height: 30m
+8. Detachable Battery: 1.1Ah/3.8V
+9. FOV: 82.6°
 
 ## Libraries
 These are few Libraries which have been used in this project.
@@ -63,15 +77,8 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
 For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1-siPP2ZfyZjvaSePzHGXWjshNIiLmaMB/view?usp=share_link). 
 
 ## Implementation demo
-
-
 https://github.com/vinay0703/fyp/assets/68630619/657fd4d5-a73d-4953-a2e3-41acf3e144c6
-
-
-
-
 https://github.com/vinay0703/fyp/assets/68630619/247a1cd7-00c2-47cd-a1f6-96019dfed68c
-
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -79,6 +86,6 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star!
 Thanks again!
 
-### Authors
+## Authors
 - [@vinay0703](https://github.com/vinay0703)
 - [@utkarsh-vats-2000](https://github.com/Utkarsh-Vats-2000)
