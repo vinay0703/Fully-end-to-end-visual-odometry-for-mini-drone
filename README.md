@@ -70,7 +70,7 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
    in the terminal openend inside the root folder.
 
 **Note:** 
-- Step 2 will download the trained weights from the [GDrive link](https://www.mathworks.com/help/simulink/) and will place them in the "visual_odometry/files/Model_weights" location automatically. If any error occurs, do this step manually by downloading from the [GDrive link](https://www.mathworks.com/help/simulink/) and place them in the "visual_odometry/files/Model_weights" location.
+- Step 2 will download the trained weights from the [GDrive link](https://drive.google.com/drive/folders/10Doj-bx6GhHnLNcPu3heIxltRcGA1AW6?usp=share_link) and will place them in the "visual_odometry/files/Model_weights" location automatically. If any error occurs, do this step manually by downloading from the [GDrive link](https://drive.google.com/drive/folders/10Doj-bx6GhHnLNcPu3heIxltRcGA1AW6?usp=share_link) and place them in the "visual_odometry/files/Model_weights" location.
 - Step 3 is optional, but recomended for faster prediction since it uses GPU.
 
 ## Documentation
