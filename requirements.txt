@@ -59,7 +59,6 @@ termcolor==2.2.0
 typing_extensions==4.4.0
 urllib3==1.26.14
 # Editable install with no version control (visual-odometry==1.0)
--e /home/robolab/anaconda3/envs/fyp-main/lib/python3.9/site-packages
 Werkzeug==2.2.2
 wrapt==1.14.1
 zipp==3.15.0
