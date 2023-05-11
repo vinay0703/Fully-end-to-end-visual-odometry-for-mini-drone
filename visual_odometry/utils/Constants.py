@@ -5,6 +5,7 @@ class Constants(object):
     
     # File save constants
     FOLDER_FOR_SAVING_FILE = None
+    FOLDER_FOR_WEIGHTS = None
     LOCATION_DATA_FILE_NAME = None
     ACCELERATION_DATA_FILE_NAME = None
     VELOCITY_DATA_FILE_NAME = None
@@ -56,6 +57,7 @@ class Constants(object):
         
         # File saving constants
         Constants.FOLDER_FOR_SAVING_FILE = "visual_odometry/files/"
+        Constants.FOLDER_FOR_WEIGHTS = "visual_odometry/files/Model_weights/"
         Constants.LOCATION_DATA_FILE_NAME = "location.xlsx"
         Constants.ACCELERATION_DATA_FILE_NAME = "acceleration.xlsx"
         Constants.VELOCITY_DATA_FILE_NAME = "velocity.xlsx"

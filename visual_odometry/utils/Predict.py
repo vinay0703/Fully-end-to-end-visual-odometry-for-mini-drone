@@ -18,7 +18,8 @@ class Model(object):
         self.keras = keras
         self.pd = pd
         self.folder = constants.FOLDER_FOR_SAVING_FILE
-        self.model_weights = self.folder + constants.WEIGHTS_FILE_NAME
+        self.model_folder = constants.FOLDER_FOR_WEIGHTS
+        self.model_weights = self.model_folder + constants.WEIGHTS_FILE_NAME
         self.video_path = self.folder + constants.VIDEO_FILE_NAME
         self.path_position = self.folder + constants.LOCATION_DATA_FILE_NAME
         self.break_line_message = constants.SEPERATE_LINE_MESSAGE

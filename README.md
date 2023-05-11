@@ -1,6 +1,8 @@
-# Visual-Inertial Odometry for DJI Tello Minidrone
+# Fully end-to-end visual odometry of DJI Tello Minidrone
 [![Python3](https://img.shields.io/badge/Python-3-blue.svg)](https://www.python.org/)
+
 [![Tensorflow](https://img.shields.io/badge/Python3-Tensorflow-green.svg)](https://www.tensorflow.org/)
+
 [![MATLAB](https://img.shields.io/badge/MATLAB-SIMULINK-blue.svg)](https://www.mathworks.com/help/simulink/)
 
 ### Project Motivation
@@ -12,7 +14,7 @@ Design a visual-inertial odometry system for a tiny aerial vehicle using MATLAB 
 Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction with the 6-axis IMU data to construct the method that will enhance state estimates and replace the presently employed optical flow modeling approach.
 
 ### Libraries
-The following Libraries have been used.
+These are few Libraries which have been used in this project.
 ```
 djitellopy==2.4.0
 et-xmlfile==1.1.0
@@ -29,6 +31,7 @@ scipy==1.10.1
 
 ### Installation
 
+This entire project is developed in Ubuntu (Debian Linux) Operating System. Below installation steps are for Ubuntu OS. If you use another OS, then choose the alternative installation steps accordingly in "setup.py" file. 
 ```
 1. Fork the repository and pull it into your local machine.
 
@@ -51,7 +54,7 @@ scipy==1.10.1
         "python3 visual_odometry/main.py"
    in the terminal openend inside the root folder.
 ```
-
+**Note:** Step 2 will download the trained weights from the [GDrive link](https://drive.google.com/drive/folders/10Doj-bx6GhHnLNcPu3heIxltRcGA1AW6?usp=share_link) and place it in "visual_odometry/files/Model_weights" location. If any error occurs, do this step manually by downloading from the [GDrive link](https://drive.google.com/drive/folders/10Doj-bx6GhHnLNcPu3heIxltRcGA1AW6?usp=share_link) .
 
 ### Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.

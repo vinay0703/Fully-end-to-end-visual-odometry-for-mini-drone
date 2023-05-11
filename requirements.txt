@@ -10,6 +10,7 @@ et-xmlfile==1.1.0
 flatbuffers==23.1.21
 fonttools==4.38.0
 gast==0.4.0
+gdown==4.7.1
 google-auth==2.16.0
 google-auth-oauthlib==1.0.0
 google-pasta==0.2.0
