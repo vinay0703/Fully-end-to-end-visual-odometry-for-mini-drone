@@ -51,7 +51,7 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
 
 2. Install all the required packages by simply typing 
         ```python3 setup.py install```
-   in the terminal opened inside the root folder.
+   in the terminal opened inside the root (fyp-main) folder.
 
 3. Setup the tensorflow-gpu in order to  make the prediction faster by typing the following commands
         
@@ -63,7 +63,7 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
         source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
         # Verify install:
         python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
-   in the terminal opened inside the root folder.
+   in the terminal opened inside the root (fyp-main) folder.
 
 
 **Note:** 
@@ -71,9 +71,9 @@ This entire project is developed in Ubuntu (Debian Linux) Operating System. Belo
 - Step 3 is optional, but recomended for faster prediction since it uses GPU.
 
 ## Running the code
-Run main.py file from root folder by simply typing
+Online implementation code can be simply runned by simply typing
         ```python3 visual_odometry/main.py```
-in the terminal openend inside the root folder.
+in the terminal openend inside the root (fyp-main) folder.
 
 ## Documentation
 For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1-siPP2ZfyZjvaSePzHGXWjshNIiLmaMB/view?usp=share_link). 
