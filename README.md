@@ -76,7 +76,7 @@ Online implementation code can be simply runned by simply typing
 in the terminal openend inside the root (fyp-main) folder.
 
 ## Documentation
-For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1-siPP2ZfyZjvaSePzHGXWjshNIiLmaMB/view?usp=share_link). 
+For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1miNF6lNpDfTgXdZperAfvq7yAh-gXNFz/view?usp=sharing). 
 
 ## Implementation demo
 
@@ -88,6 +88,10 @@ https://github.com/vinay0703/fyp/assets/68630619/5204fffe-70fe-405b-94a7-a88329d
 
 
 https://github.com/vinay0703/fyp/assets/68630619/204ded87-453f-4397-9014-a449d39c8385
+
+
+
+https://github.com/vinay0703/fyp/assets/68630619/93eb0110-55fc-402b-8bca-ac128ddbc596
 
 
 ## Contributing
