@@ -17,6 +17,8 @@ Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction wit
 We have followed Deep learning approach which has the following advantages over the traditional approach.
 ![Advantages of deep learning approach](https://github.com/vinay0703/fyp/assets/68630619/805cadbf-bd19-4add-b3f0-8e1a79f7ab35)
 
+## Our approach
+Below is the brief overview of approach we followed. For detail understanding, see the Documentation section.
 
 ## Minidrone specifications
 We have used [DJI Ryze Tello](https://www.ryzerobotics.com/tello/specs) minidrone for this project.
@@ -80,9 +82,6 @@ Online implementation code can be simply runned by simply typing
         ```python3 visual_odometry/main.py```
 in the terminal openend inside the root (fyp-main) folder.
 
-## Documentation
-For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1miNF6lNpDfTgXdZperAfvq7yAh-gXNFz/view?usp=sharing). 
-
 ## Implementation demo
 
 
@@ -98,6 +97,9 @@ https://github.com/vinay0703/fyp/assets/68630619/204ded87-453f-4397-9014-a449d39
 
 https://github.com/vinay0703/fyp/assets/68630619/93eb0110-55fc-402b-8bca-ac128ddbc596
 
+
+## Documentation
+For more information about this project, read the [Thesis.pdf](https://drive.google.com/file/d/1miNF6lNpDfTgXdZperAfvq7yAh-gXNFz/view?usp=sharing). 
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
