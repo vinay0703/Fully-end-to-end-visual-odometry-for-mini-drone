@@ -15,7 +15,7 @@ Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction wit
 
 ## How our approach is different from traditional Visual Odometry?
 We have followed Deep learning approach which has the following advantages over the traditional approach.
-<img width="569" alt="Advantages of deep learning approach" src="https://github.com/vinay0703/fyp/assets/68630619/805cadbf-bd19-4add-b3f0-8e1a79f7ab35">
+![Advantages of deep learning approach](https://github.com/vinay0703/fyp/assets/68630619/805cadbf-bd19-4add-b3f0-8e1a79f7ab35)
 
 
 ## Minidrone specifications
