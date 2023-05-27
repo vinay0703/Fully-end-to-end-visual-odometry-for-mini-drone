@@ -13,6 +13,11 @@ Using an airborne vehicle to explore an inside environment is a burgeoning topic
 Design a visual-inertial odometry system for a tiny aerial vehicle using MATLAB and Simulink. 
 Utilize the downward-facing camera on the DJI Tello Minidrone in conjunction with the 6-axis IMU data to construct the method that will enhance state estimates and replace the presently employed optical flow modeling approach.
 
+## How our approach is different from traditional Visual Odometry?
+We have followed Deep learning approach which has the following advantages over the traditional approach.
+<img width="569" alt="Advantages of deep learning approach" src="https://github.com/vinay0703/fyp/assets/68630619/805cadbf-bd19-4add-b3f0-8e1a79f7ab35">
+
+
 ## Minidrone specifications
 We have used [DJI Ryze Tello](https://www.ryzerobotics.com/tello/specs) minidrone for this project.
 ![tello](https://github.com/vinay0703/fyp/assets/68630619/e888dba7-be28-4a5e-94af-2f89c38f698e)
