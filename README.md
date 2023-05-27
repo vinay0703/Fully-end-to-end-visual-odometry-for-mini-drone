@@ -19,6 +19,7 @@ We have followed Deep learning approach which has the following advantages over 
 
 ## Our approach
 Below is the brief overview of approach we followed. For detail understanding, see the Documentation section.
+![Approach](https://github.com/vinay0703/fyp/assets/68630619/0a7b8e75-ba3a-42d2-82c5-6c0049678d1d)
 
 ## Minidrone specifications
 We have used [DJI Ryze Tello](https://www.ryzerobotics.com/tello/specs) minidrone for this project.
