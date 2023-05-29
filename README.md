@@ -18,7 +18,7 @@ We have followed Deep learning approach which has the following advantages over 
 ![Advantages of deep learning approach](https://github.com/vinay0703/fyp/assets/68630619/805cadbf-bd19-4add-b3f0-8e1a79f7ab35)
 
 ## Our approach
-Below is the brief overview of approach we followed. For detail understanding, see the Documentation section.
+Below is the brief overview of approach we followed. For detail understanding, see the [Documentation](#documentation) section.
 ![Approach](https://github.com/vinay0703/fyp/assets/68630619/0a7b8e75-ba3a-42d2-82c5-6c0049678d1d)
 
 ## Minidrone specifications
